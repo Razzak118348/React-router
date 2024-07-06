@@ -9,11 +9,13 @@ import About from "./Component/About/About";
 import Contact from "./Component/Contuct/Contact";
 import Users from "./Component/Users/Users";
 import UserDetails from "./Component/UserDetails/UserDetails";
+import ErrorPage from "./Component/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement:<ErrorPage></ErrorPage>,
     children : [
       {
         path: '/about',
