@@ -1,9 +1,4 @@
-.link {
-    display: flex;
-    align-items: center;
-}
-
-.link a {
-    margin: 10px;
-    align-items: center;
+nav a.active {
+    background-color: darkblue;
+    text-decoration: underline;
 }
