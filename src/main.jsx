@@ -32,6 +32,10 @@ const router = createBrowserRouter([
       {
         // /user/: userId ,, here userId like a variable
         path:"/user/:userId",//link path 
+        // loader:({params})=>console.log(params.userId), 
+        // show this params with console 
+        loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),//${params.userId} eta holo individual link for individual user 
+      
         element:<UserDetails></UserDetails>
       }
     ]

@@ -11,8 +11,13 @@ const User = ({user}) => {
             <p>phone : {phone}</p>
            <div className='border inline-block mt-5 rounded-lg p-3'>
            <Link   to={`/user/${id}`}>Show Details</Link>
+           
 
            </div>
+           {/* another option  */}
+           <Link to={`/user/${id}`}>
+           <button className='p-1 border-y-amber-200 border-2 mx-3'>Click Me</button>
+           </Link>
         </div>
     );
 };
